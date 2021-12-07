@@ -5,8 +5,8 @@
 (defparameter *canvas* nil)
 (defparameter *canvas-width* 640)
 (defparameter *canvas-height* 480)
-(defparameter *brush-width* 16)
-(defparameter *brush-height* 16)
+(defparameter *brush-width* 8)
+(defparameter *brush-height* 8)
 (defparameter *back-buffer* nil)
 (defparameter *brush-bitmap* nil)
 
@@ -32,7 +32,7 @@
   (al:draw-filled-circle (/ *brush-width* 2)
 		  (/ *brush-height* 2)
 		  (/ (min *brush-width* *brush-height*) 2)
-		  (HSL->RGB 200 1.0 .60)))
+		  (HSL->RGB 20 1.0 .60)))
 
 
 (defun get-mouse-data  ()
